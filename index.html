@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d11a2a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .search-button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://www.irctc.co.in/images/irctc_logo.png" alt="IRCTC Logo" class="logo">
+        <h1>IRCTC Train Ticket Booking</h1>
+        <form action="#" method="get">
+            <div class="form-group">
+                <label for="from-station">From</label>
+                <input type="text" id="from-station" name="from-station" placeholder="Enter source station" required>
+            </div>
+            <div class="form-group">
+                <label for="to-station">To</label>
+                <input type="text" id="to-station" name="to-station" placeholder="Enter destination station" required>
+            </div>
+            <div class="form-group">
+                <label for="journey-date">Date of Journey</label>
+                <input type="date" id="journey-date" name="journey-date" required>
+            </div>
+            <div class="form-group">
+                <label for="class">All Classes</label>
+                <select id="class" name="class">
+                    <option value="all">All Classes</option>
+                    <option value="1a">First AC (1A)</option>
+                    <option value="2a">Second AC (2A)</option>
+                    <option value="3a">Third AC (3A)</option>
+                    <option value="sl">Sleeper (SL)</option>
+                    <option value="cc">AC Chair Car (CC)</option>
+                    <option value="2s">Second Seating (2S)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quota">General</label>
+                <select id="quota" name="quota">
+                    <option value="general">General</option>
+                    <option value="tatkal">Tatkal</option>
+                    <option value="ladies">Ladies</option>
+                    <option value="divyang">Divyang</option>
+                </select>
+            </div>
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        <p class="disclaimer">
+            This is a mock-up HTML page for demonstration purposes only. It is not an official IRCTC website.
+        </p>
+    </div>
+
+</body>
+</html>
